@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete An Employee</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/update">Don't click here</a>
+    </div>
+    <div class="form-add-new">
+        <form action="/delete-user" method="POST">
+            <fieldset>
+                <legend>Delete an employee</legend>
+                <div class="input-group">
+                    <label>Are you sure to delete this employee with id <i><%= userId.id %></i></label>
+                </div>
+                <div>
+                    <button>Confirm</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
